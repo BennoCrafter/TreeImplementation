@@ -15,7 +15,6 @@ if __name__ == "__main__":
     root = Node("root", 0, {})
     # Tokenize the text
     tokenized_text = [sent.split() for sent in example_text.split(".")]
-    print(tokenized_text)
     # Create the tree
     for sent in tokenized_text:
         if not sent:
@@ -23,7 +22,6 @@ if __name__ == "__main__":
         current_node = root
         for word in sent:
             word = word.strip()
-            print(word  )
             if word in current_node.children:
                 current_node = current_node.children[word]
                 current_node.count += 1
