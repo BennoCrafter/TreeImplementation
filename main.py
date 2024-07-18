@@ -1,6 +1,6 @@
 from src.node import Node
 
-example_text = "Harry Potter is a wizard. He goes to Hogwarts. He is in Gryffindor. He has a friend named Ron. Ron has a rat named Scabbers. Harry has a pet owl named Hedwig. Harry has a wand. He has a scar on his forehead."
+example_text = ""
 root = Node("root", 0, {})
 # Tokenize the text
 tokenized_text = [sent.split() for sent in example_text.split(".")]
